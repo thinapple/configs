@@ -1,0 +1,10 @@
+[profiles]
+  [[default]]
+    font=DejaVu Sans Mono 9
+    visible_bell=False
+    audible_bell=True
+    titlebars=False
+    palette=#000000000000:#CDCD00000000:#0000CDCD0000:#CDCDCDCD0000:#30BF30BFA38E:#A53C212FA53C:#0000CDCDCDCD:#FAFAEBEBD7D7:#404040404040:#FFFF00000000:#0000FFFF0000:#FFFFFFFF0000:#55555555FFFF:#FFFF0000FFFF:#0000FFFFFFFF:#FFFFFFFFFFFF
+    use_theme_colors=False
+    background_color=#202020
+    encoding=UTF-8

@@ -1,0 +1,1 @@
+urxvt -depth 32 -pt Root -bg grey10 -fg grey90 -fn "xft:Dejavu Sans Mono:Regular:antialias=false:hint=false:pixelsize=11" +is -sr +st -sl 2048 -color4 steelblue

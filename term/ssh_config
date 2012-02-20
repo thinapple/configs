@@ -1,0 +1,2 @@
+ControlMaster auto
+ControlPath /tmp/%r@%h:%p

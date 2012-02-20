@@ -1,0 +1,10 @@
+[user]
+	name = Zhang Yi
+	email = thinapple@gmail.com
+[color]
+    branch = auto
+    diff = auto
+    status = auto
+[core]
+    editor = vim
+

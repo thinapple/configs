@@ -1,0 +1,12 @@
+### rxvt-unicode
+URxvt.preeditType: Root
+URxvt.termName: xterm-256color
+URxvt.depth: 32
+URxvt.font: xft:Dejavu Sans Mono:Regular:antialias=true:hint=true:pixelsize=12,\
+            xft:WenQuanYi Micro Hei:Regular:antialias=true:hint=true:pixelsize=12
+URxvt.perl-ext-common: default,matcher,tabbed
+URxvt.background: [100]#050505
+URxvt.foreground: [100]#C0C0C0
+URxvt.saveLines: 2048
+URxvt.scrollBar: False
+

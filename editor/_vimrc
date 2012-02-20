@@ -1,0 +1,84 @@
+" Personal Infomation [CVIM]
+let g:C_AuthorName='Zhang Yi'
+let g:C_Email='thinapple@gmail.com'
+let g:C_MapLeader="`"
+
+" Basic Settings for display
+syntax on
+set nocp
+set ru
+set foldmethod=syntax
+set foldlevel=88
+set sm
+set ai
+set sw=4
+set ts=4
+set noet
+set lbr
+set backspace=indent,eol,start
+set whichwrap=b,s,<,>,[,]
+set nowrap
+set fo+=mB
+set selectmode=
+set mousemodel=popup
+set mouse=a
+set keymodel=startsel,stopsel
+set selection=inclusive
+set matchpairs+=<:>
+set number
+set ignorecase
+set hlsearch
+set incsearch
+set expandtab
+set tabstop=4
+set nobackup
+set makeprg=make
+set cursorline
+colorscheme slate
+
+if has("gui_running")
+	set lines=20
+	set columns=90
+	set guioptions-=m
+    set guioptions-=T
+    :hi CursorLine term=NONE guibg=DarkGray guifg=White
+    if has("gui_win32")
+        set guifont=Dejavu_Sans_Mono:h9
+        set dir=.
+    else
+        set guifont=DejaVu\ Sans\ Mono\ 9
+        set dir=/tmp
+    endif
+else
+    :hi CursorLine cterm=NONE ctermbg=darkred ctermfg=gray
+endif
+
+filetype indent on
+filetype plugin on
+
+set fileencodings=utf8,gbk
+
+" C/C++ 
+set cin
+set cino=:0g0t0(sus
+
+" for mouse under xterms
+set ttymouse=xterm2
+
+" Key-map's
+nmap <C-F12> :!ctags -R --c++-kinds=+p --c-kinds=+p --fields=+ianS --extra=+q .
+nmap <C-Esc> <C-W>]
+nmap <C-S-Esc> :quit<CR>
+
+nmap <C-F2> :NERDTreeToggle<CR>
+nmap <C-F3> :TlistToggle<CR>
+nmap <C-F5> :copen<CR>
+
+nmap <F7> g
+nmap <F8> <C-T> 
+
+nmap <C-Up> :resize +1<CR>
+nmap <C-Down> :resize -1<CR>
+nmap <C-Left> :vertical resize -1<CR>
+nmap <C-Right> :vertical resize +1<CR>
+

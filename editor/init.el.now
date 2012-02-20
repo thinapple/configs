@@ -1,0 +1,68 @@
+;; ;; ;; ;; Display Settings ;; ;; ;; ;;
+
+;; no splash screen
+(setq inhibit-splash-screen t)
+
+;; no menu & no toolbar
+(menu-bar-mode nil)
+(tool-bar-mode nil)
+
+;; scroll
+(setq scroll-bar-mode-explicit t)
+(set-scroll-bar-mode 'right)
+(setq mouse-wheel-scroll-amount '(2 ((shift) . 1)))
+(setq mouse-wheel-progressive-speed nil)
+(setq mouse-wheel-follow-mouse 't)
+(setq scroll-step 2)
+
+ ;; line & column number
+(line-number-mode t)
+(column-number-mode t)
+(global-linum-mode t)
+(setq linum-format
+      (lambda (line)
+        (propertize (format
+                     (let ((w (length (number-to-string
+                                       (count-lines (point-min) (point-max))))))
+                       (concat "%" (number-to-string w) "d|"))
+                     line)
+                    'face 'linum)))
+
+;; y-or-n-p
+(defalias 'yes-or-not-p 'y-or-n-p)
+
+;; syntax highlighting
+(global-font-lock-mode t)
+
+;; ;; ;; ;; File Management ;; ;; ;; ;;
+(setq auto-save-default nil)
+(auto-save-mode nil)
+(setq make-backup-files nil)
+    
+;; ;; ;; ;; Keyboard and Mouse ;; ;; ;; ;;
+
+;; shift selection
+(setq shift-select-mode t)
+
+;; mouse in console
+(xterm-mouse-mode t)
+
+;; tab and indent
+(setq-default indent-tabs-mode nil)
+(setq-default default-tab-width 4)
+(setq-default standard-indent 4)
+(setq-default c-basic-offset 4)
+(setq-default py-indent-offset 4)
+
+;; Global Key Bindings
+(global-set-key (kbd "RET") 'newline-and-indent)
+
+;; ------------------------------------------------------------------------ ;;
+;; import some utils
+(if (fboundp 'normal-top-level-add-subdirs-to-load-path)
+  (let* ((my-mod-load-path "~/.emacs.d")
+         (default-directory my-mod-load-path))
+    (setq load-path (cons my-mod-load-path load-path))
+    (normal-top-level-add-subdirs-to-load-path)))
+
+
