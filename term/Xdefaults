@@ -1,5 +1,8 @@
 ### rxvt-unicode
 URxvt.preeditType: Root
+URxvt.iso14755: False
+URxvt.iso14755_52: False
+URxvt.secondaryScroll: True
 URxvt.termName: xterm-256color
 URxvt.depth: 32
 URxvt.font: xft:Dejavu Sans Mono:Regular:antialias=true:hint=true:pixelsize=12,\
