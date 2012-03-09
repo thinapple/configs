@@ -62,8 +62,8 @@ set fileencodings=utf8,gbk
 set cin
 set cino=:0g0t0(sus
 
-" for mouse under xterms
-set ttymouse=xterm2
+" for mouse under urxvt
+set ttymouse=urxvt
 
 " Key-map's
 nmap <C-F12> :!ctags -R --c++-kinds=+p --c-kinds=+p --fields=+ianS --extra=+q .
