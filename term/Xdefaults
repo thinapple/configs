@@ -1,12 +1,11 @@
 ### Xft
-#Xft.autohint:               0
-#Xft.dpi:                    106
+Xft.dpi:                    96
+Xft.autohint:               1
 Xft.antialias:              1
 Xft.rgba:                   rgba
-#Xft.hinting:                true
-#Xft.hintstyle:              hintslight
+Xft.hinting:                true
+Xft.hintstyle:              hintfull
 Xft.lcdfilter:              lcddefault
-
 ### rxvt-unicode
 URxvt.preeditType: Root
 URxvt.iso14755: False
@@ -15,9 +14,8 @@ URxvt.secondaryScroll: True
 URxvt.termName: xterm-256color
 URxvt.depth: 32
 URxvt.geometry: 90x30
-URxvt.font: xft:Dejavu Sans Mono:Regular:antialias=true:hint=true:pixelsize=12,\
-            xft:WenQuanYi Micro Hei:Regular:antialias=true:hint=true:pixelsize=12
-URxvt.perl-ext-common: default,tabbed
+URxvt.font: xft:Dejavu Sans Mono:Regular:antialias=true:hint=true:pixelsize=11, \
+            xft:WenQuanYi Micro Hei Mono:Regular:antialias=true:hint=true:pixelsize=11
 URxvt.background: [100]#050505
 URxvt.foreground: [100]#C0C0C0
 URxvt.saveLines: 2048
@@ -28,3 +26,7 @@ URxvt.keysym.Control-Up: \033[1;5A
 URxvt.keysym.Control-Down: \033[1;5B
 URxvt.keysym.Control-Left: \033[1;5D
 URxvt.keysym.Control-Right: \033[1;5C
+### emacs
+Emacs.FontBackend: Xft
+Emacs.Font: Dejavu Sans Mono:Regular:antialias=true:hint=true:pixelsize=11
+            

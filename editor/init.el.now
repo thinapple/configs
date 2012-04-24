@@ -27,11 +27,14 @@
                        (concat "%" (number-to-string w) "d|"))
                      line)
                     'face 'linum)))
+(global-hl-line-mode)
 
 ;; y-or-n-p
-(defalias 'yes-or-not-p 'y-or-n-p)
+(defalias 'yes-or-no-p 'y-or-n-p)
 
-;; syntax highlighting
+;; theme & syntax highlighting
+(color-theme-initialize)
+(color-theme-dark-laptop)
 (global-font-lock-mode t)
 
 ;; ;; ;; ;; File Management ;; ;; ;; ;;
