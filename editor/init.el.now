@@ -28,6 +28,7 @@
                      line)
                     'face 'linum)))
 (global-hl-line-mode)
+(set-face-background hl-line-face "gray24")
 
 ;; y-or-n-p
 (defalias 'yes-or-no-p 'y-or-n-p)

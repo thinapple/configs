@@ -20,17 +20,8 @@ if [ -z "$debian_chroot" ] && [ -r /etc/debian_chroot ]; then
     debian_chroot=$(cat /etc/debian_chroot)
 fi
 
-# Comment in the above and uncomment this below for a color prompt
+# color prompt
 PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u\[\033[00m\]@\h:\[\033[01;34m\]\W\[\033[00m\]\$ '
-
-# If this is an xterm set the title to user@host:dir
-case "$TERM" in
-xterm*|rxvt*)
-   PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME}: ${PWD/$HOME/~}\007"'
-   ;;
-*)
-   ;;
-esac
 
 # Alias definitions.
 # You may want to put all your additions into a separate file like
@@ -45,11 +36,9 @@ esac
 if [ "$TERM" != "dumb" ]; then
     eval "`dircolors -b`"
     alias ls='ls --color=auto'
-    #alias dir='ls --color=auto --format=vertical'
-    #alias vdir='ls --color=auto --format=long'
 fi
 
-# some more ls aliases
+# some more aliases
 alias ll='ls -l'
 alias la='ls -A'
 alias l='ls -CF'
@@ -59,6 +48,7 @@ alias xem='emacs'
 alias gentags='ctags -R --c++-kinds=+p --c-kinds=+p --fields=+ianS --extra=+q'
 alias gbcat='iconv -f gb18030 -t utf8'
 alias utfcat='iconv -f utf8 -t gb18030'
+alias ta='tmux attach'
 
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
