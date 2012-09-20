@@ -35,14 +35,22 @@ set tabstop=4
 set nobackup
 set makeprg=make
 set cursorline
-colorscheme slate
+
+function! s:CheckColorSchemeExist(name)
+    let pat = 'colors/'.a:name.'.vim'
+    return !empty(globpath(&rtp, pat))
+endfunction
+if s:CheckColorSchemeExist('zenburn')
+    let g:zenburn_high_Contrast=0
+    colorscheme zenburn
+endif
 
 if has("gui_running")
 	set lines=20
 	set columns=90
 	set guioptions-=m
     set guioptions-=T
-    :hi CursorLine term=NONE guibg=DarkGray guifg=White
+"    :hi CursorLine term=NONE guibg=DarkGray guifg=White
     if has("gui_win32")
         set guifont=Dejavu_Sans_Mono:h9
         set dir=.
@@ -51,7 +59,7 @@ if has("gui_running")
         set dir=/tmp
     endif
 else
-    :hi CursorLine cterm=NONE ctermbg=darkred ctermfg=gray
+"    :hi CursorLine cterm=NONE ctermbg=darkred ctermfg=gray
 endif
 
 filetype indent on
