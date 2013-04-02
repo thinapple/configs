@@ -74,6 +74,9 @@ set cino=:0g0t0(sus
 " for mouse under urxvt/xterm2
 set ttymouse=xterm2
 
+" for colortheme(zenburn) under tmux
+set t_ut=
+
 " Key-map's
 nmap <C-F12> :!ctags -R --c++-kinds=+p --c-kinds=+p --fields=+ianS --extra=+q .
 nmap <C-Esc> <C-W>]
