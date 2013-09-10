@@ -1,2 +1,6 @@
 ControlMaster auto
 ControlPath /tmp/%r@%h:%p
+Compression yes
+StrictHostKeyChecking no
+TCPKeepAlive no
+IdentityFile ~/.ssh/id_rsa

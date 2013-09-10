@@ -1,4 +1,3 @@
-### Xft
 Xft.dpi:                    96
 Xft.autohint:               1
 Xft.antialias:              1
@@ -6,30 +5,31 @@ Xft.rgba:                   rgba
 Xft.hinting:                true
 Xft.hintstyle:              hintfull
 Xft.lcdfilter:              lcddefault
-### rxvt-unicode
+
+URxvt.letterSpace: -1
 URxvt.preeditType: Root
 URxvt.iso14755: False
 URxvt.iso14755_52: False
 URxvt.secondaryScroll: True
 URxvt.termName: xterm-256color
 URxvt.depth: 32
-URxvt.geometry: 90x30
-URxvt.font: xft:Dejavu Sans Mono:Regular:antialias=true:hint=true:pixelsize=11, \
-            xft:WenQuanYi Micro Hei Mono:Regular:antialias=true:hint=true:pixelsize=11
-URxvt.boldFont: xft:Dejavu Sans Mono:Bold:antialias=true:hint=false:pixelsize=11, \
-            xft:WenQuanYi Micro Hei Mono:Bold:antialias=true:hint=false:pixelsize=11
+URxvt.geometry: 100x25
+URxvt.font: xft:DejaVu Sans Mono:Regular:antialias=true:hint=true:pixelsize=11, \
+            xft:WenQuanYi Micro Hei Mono:Regular:antialias=true:hint=false:pixelsize=11
+URxvt.boldFont: xft:DejaVu Sans Mono:Regular:antialias=true:hint=false:pixelsize=11, \
+            xft:WenQuanYi Micro Hei Mono:Regular:antialias=true:hint=false:pixelsize=11
 URxvt.background: [100]#050505
 URxvt.foreground: [100]#C0C0C0
 URxvt.saveLines: 2048
 URxvt.scrollBar: False
-##URxvt.keysym.Home: \033[1~
-##URxvt.keysym.End: \033[4~
-##URxvt.keysym.Control-Up: \033[1;5A
-##URxvt.keysym.Control-Down: \033[1;5B
-##URxvt.keysym.Control-Left: \033[1;5D
-##URxvt.keysym.Control-Right: \033[1;5C
+URxvt.perl-ext-common: default,clipboard
+URxvt.keysym.Home: \033[1~
+URxvt.keysym.End: \033[4~
+URxvt.keysym.Control-Up: \033[1;5A
+URxvt.keysym.Control-Down: \033[1;5B
+URxvt.keysym.Control-Left: \033[1;5D
+URxvt.keysym.Control-Right: \033[1;5C
 
-### emacs
 Emacs.FontBackend: Xft
 Emacs.Font: Dejavu Sans Mono:Regular:antialias=true:hint=true:pixelsize=11
 
