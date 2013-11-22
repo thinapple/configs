@@ -16,6 +16,7 @@ shopt -s checkwinsize
 
 ulimit -c unlimited
 
+alias grep='grep --color'
 alias ls='ls --color=auto'
 alias em='emacs -nw'
 alias xem='emacs'
