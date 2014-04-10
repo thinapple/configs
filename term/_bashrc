@@ -24,6 +24,7 @@ alias gentags='ctags -R --c++-kinds=+p --c-kinds=+p --fields=+ianS --extra=+q'
 alias gbcat='iconv -f gb18030 -t utf8'
 alias utfcat='iconv -f utf8 -t gb18030'
 alias ta='tmux attach'
+alias tm='tmux'
 
 alias chgb='printf "\33]701;zh_CN.GB18030\007"'                                           
 alias chutf='printf "\33]701;zh_CN.UTF-8\007"'                                            
@@ -49,3 +50,5 @@ export EDITOR=vim
 export DEBEMAIL=thinapple@gmail.com
 export DEBFULLNAME=Zhang Yi
 
+# ENV
+export LC_CTYPE=zh_CN.UTF-8

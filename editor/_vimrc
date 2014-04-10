@@ -52,10 +52,10 @@ if has("gui_running")
     set guioptions-=T
 "    :hi CursorLine term=NONE guibg=DarkGray guifg=White
     if has("gui_win32")
-        set guifont=Dejavu_Sans_Mono:h9
+        set guifont=Dejavu_Sans_Mono:h8
         set dir=.
     else
-        set guifont=DejaVu\ Sans\ Mono\ 9
+        set guifont=Liberation\ Mono\ 8
         set dir=/tmp
     endif
 else
