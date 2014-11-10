@@ -55,7 +55,7 @@ if has("gui_running")
         set guifont=Dejavu_Sans_Mono:h8
         set dir=.
     else
-        set guifont=Liberation\ Mono\ 8
+        set guifont=Dejavu\ Sans\ Mono\ 8
         set dir=/tmp
     endif
 else
@@ -76,6 +76,9 @@ let g:clang_conceal_snippets=1
 set concealcursor=inv
 set conceallevel=2
 let g:clang_snippets_engine='clang_complete'
+let g:clang_use_library=1
+let g:clang_complete_macros=1
+let g:clang_complete_patterns=1
 set completeopt=menu,longest
 
 " for mouse under urxvt/xterm2
@@ -93,3 +96,5 @@ nmap <C-F2> :NERDTreeToggle<CR>
 nmap <C-F3> :TlistToggle<CR>
 nmap <C-F5> :copen<CR>
 
+" filetypes
+autocmd BufRead,BufNewFile *.md set filetype=markdown

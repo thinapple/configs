@@ -28,8 +28,9 @@ alias tm='tmux'
 
 alias chgb='printf "\33]701;zh_CN.GB18030\007"'                                           
 alias chutf='printf "\33]701;zh_CN.UTF-8\007"'                                            
-alias zlogin='chgb; ssh zhangyi@relay01.baidu.com; chutf'                                 
-alias relay='chgb; ssh zhangyi@bpitrelay.internal.baidu.com; chutf'
+#alias zlogin='chgb; ssh zhangyi@relay01.baidu.com; chutf'                                 
+#alias relay='chgb; ssh zhangyi@bpitrelay.internal.baidu.com; chutf'
+#alias alidev='ssh -t relay -- "ssh dev"'
 
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile

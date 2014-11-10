@@ -7,6 +7,6 @@ export GTK_IM_MODULE=fcitx
 export QT_IM_MODULE=fcitx
 export XMODIFIERS="@im=fcitx"
 
-xbacklight -set 50
-exec lxsession 
-
+xbacklight -set 60
+#exec lxsession 
+startkde
