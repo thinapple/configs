@@ -14,10 +14,10 @@ URxvt.secondaryScroll: True
 URxvt.termName: xterm-256color
 URxvt.depth: 32
 URxvt.geometry: 100x25
-URxvt.font: xft:DejaVu Sans Mono:Regular:antialias=true:hint=true:pixelsize=11, \
-            xft:WenQuanYi Micro Hei Mono:Regular:antialias=true:hint=false:pixelsize=11
-URxvt.boldFont: xft:DejaVu Sans Mono:Regular:antialias=true:hint=false:pixelsize=11, \
-            xft:WenQuanYi Micro Hei Mono:Regular:antialias=true:hint=false:pixelsize=11
+URxvt.font: xft:DejaVu Sans Mono:Regular:antialias=true:hint=true:pixelsize=24, \
+            xft:WenQuanYi Micro Hei Mono:Regular:antialias=true:hint=false:pixelsize=24
+URxvt.boldFont: xft:DejaVu Sans Mono:Regular:antialias=true:hint=false:pixelsize=24, \
+            xft:WenQuanYi Micro Hei Mono:Regular:antialias=true:hint=false:pixelsize=24
 URxvt.background: [100]#050505
 URxvt.foreground: [100]#C0C0C0
 URxvt.saveLines: 2048

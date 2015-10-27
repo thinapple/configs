@@ -14,15 +14,15 @@ shopt -s checkwinsize
 # make less more friendly for non-text input files, see lesspipe(1)
 [ -x /usr/bin/lesspipe ] && eval "$(lesspipe)"
 
-ulimit -c unlimited
+#ulimit -c unlimited
 
 alias grep='grep --color'
 alias ls='ls --color=auto'
 alias em='emacs -nw'
 alias xem='emacs'
 alias gentags='ctags -R --c++-kinds=+p --c-kinds=+p --fields=+ianS --extra=+q'
-alias gbcat='iconv -f gb18030 -t utf8'
-alias utfcat='iconv -f utf8 -t gb18030'
+alias gbcat='iconv -f gb18030 -t utf8 -c'
+alias utfcat='iconv -f utf8 -t gb18030 -c'
 alias ta='tmux attach'
 alias tm='tmux'
 
@@ -53,3 +53,4 @@ export DEBFULLNAME=Zhang Yi
 
 # ENV
 export LC_CTYPE=zh_CN.UTF-8
+export PATH=~/usr/bin:$PATH
