@@ -30,7 +30,8 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'Zenburn'
 Plugin 'bufexplorer.zip'
 Plugin 'The-NERD-tree'
-Plugin 'Valloric/YouCompleteMe'
+Plugin 'clang-complete'
+"Plugin 'Valloric/YouCompleteMe'
 " " All of your Plugins must be added before the following line
 call vundle#end()
 filetype plugin indent on
@@ -112,17 +113,17 @@ set fileencodings=ucs-bom,utf8,gb18030
 " C/C++ 
 set cin
 set cino=:0g0t0(sus
-"let g:clang_snippets=1
-"let g:clang_conceal_snippets=1
-"set concealcursor=inv
-"set conceallevel=2
-"let g:clang_snippets_engine='clang_complete'
-"let g:clang_use_library=1
-"let g:clang_complete_macros=1
-"let g:clang_complete_patterns=1
-"let g:clang_jumpto_declaration_key='<C-\>'
-"let g:clang_jumpto_declaration_in_preview_key='<C-W>'
-"set completeopt=menu,longest
+let g:clang_snippets=1
+let g:clang_conceal_snippets=1
+set concealcursor=inv
+set conceallevel=2
+let g:clang_snippets_engine='clang_complete'
+let g:clang_use_library=1
+let g:clang_complete_macros=1
+let g:clang_complete_patterns=1
+let g:clang_jumpto_declaration_key='<C-\>'
+let g:clang_jumpto_declaration_in_preview_key='<C-W>'
+set completeopt=menu,longest
 
 " for mouse under urxvt/xterm2
 set ttymouse=xterm2
